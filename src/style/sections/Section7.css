@@ -1,0 +1,356 @@
+.section7{
+    height: 85vh;
+    background-color: var(--bg);
+    color: var(--t);
+    position: relative;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.sec7container{
+    /* border: 1px solid white; */
+    width: 80%;
+    margin: auto;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----------------- left content ---------------------- */
+.sec7content{
+    /* border: 1px solid white; */
+    width: 50%;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.sec7smallhead{
+    font-size: 1.2vw;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1vw;
+    color: var(--o);
+}
+
+.sec7head{
+    font-size: 2.5vw;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.5rem;
+    margin-bottom: 2vw;
+}
+
+.sec7para{
+    font-size: 0.9vw;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.25rem;
+    margin-bottom: 2vw;
+}
+
+.sec7btn{
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem 2.5rem;
+    background-color: var(--o);
+    color: var(--t);
+    border: none;
+    outline: none;
+}
+
+/* -------------------- slider ------------------------------- */
+.slick-arrow.slick-prev, 
+.slick-arrow.slick-next{
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.slick-prev{
+    left: 10vw !important;
+    transform: translateY(8vw);
+}
+.slick-next{
+    right: 10vw !important;
+    transform: translateY(8vw);
+}
+.slick-prev::before, .slick-next::before{
+    display: none;
+}
+.prevbtn, .nextbtn{
+    font-size: 3.5vw;
+    color: var(--white) !important;
+}
+
+/* ------ slider content ------- */
+
+.sec7slider{
+    /* border: 1px solid white; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec7item{
+    /* border: 1px solid white; */
+    width: 95% !important;
+    padding: 1rem 1rem;
+    text-align: left;
+    background-color: var(--sec6box);
+}
+
+.testimonialpara{
+    margin-bottom: 1rem;
+    font-size: 0.8vw;
+}
+
+.testimonialdata{
+    display: flex;
+}
+
+.testimonialimg1{
+    background: url('../../../public/images/b1.jpg');
+}
+
+.testimonialimg2{
+    background: url('../../../public/images/trainers/b2.jpg');
+}
+
+.testimonialimg3{
+    background: url('../../../public/images/trainers/b3.jpg');
+}
+
+.testimonialimg4{
+    background: url('../../../public/images/trainers/b4.jpg');
+}
+
+.testimonialimg5{
+    background: url('../../../public/images/anime1.jpg');
+}
+
+.testimonialimg{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: top;
+}
+
+.testimonialname{
+    /* border: 1px solid white; */
+    padding: 0.2rem 0;
+    padding-left: 1.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.testimonialname1{
+    font-size: 1.2vw;
+}
+
+.testimonialname2{
+    font-size: 0.9vw;
+    color: var(--o);
+    font-weight: 500;
+}
+
+.testimonialstar{
+    padding-top: 0.7rem;
+    padding-left: 2.2vw;
+    color: var(--o);
+    font-size: 2vw;
+}
+
+/* ------------------- media queries --------------------- */
+
+@media (max-width: 900px) {
+    .sec7container{
+        margin-top: 3rem;
+        display: block;
+    }
+    .sec7content{
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .sec7slider{
+        width: 100%;
+    }
+    .sec7smallhead{
+        font-size: 0.9rem;
+    }
+    .sec7head{
+        font-size: 2rem;
+    }
+    .sec7para{
+        font-size: 0.9rem;
+    }
+    .sec7btn{
+        font-size: 0.9rem;
+    }
+    .testimonialpara{
+        font-size: 0.9rem;
+    }
+    .testimonialimg{
+        width: 60px;
+        height: 60px;
+    }
+    .testimonialname{
+        width: 60%;
+    }
+    .testimonialname1{
+        font-size: 1.2rem;
+    }
+    .testimonialname2{
+        font-size: 0.9rem;
+    }
+    .testimonialstar{
+        font-size: 2rem;
+    }
+    .slick-prev{
+        transform: translateY(10vw);
+    }
+    .slick-next{
+        transform: translateY(10vw);
+    }
+} 
+
+@media (max-width: 620px) {
+    .sec7smallhead{
+        font-size: 0.7rem;
+    }
+    .sec7head{
+        font-size: 1.5rem;
+    }
+    .sec7para{
+        font-size: 0.7rem;
+    }
+    .sec7btn{
+        font-size: 0.7rem;
+    }
+    .testimonialpara{
+        font-size: 0.7rem;
+    }
+    .testimonialimg{
+        width: 50px;
+        height: 50px;
+    }
+    .testimonialname{
+        width: 60%;
+    }
+    .testimonialname1{
+        font-size: 1rem;
+    }
+    .testimonialname2{
+        font-size: 0.7rem;
+    }
+    .testimonialstar{
+        font-size: 1.5rem;
+    }
+    .slick-prev{
+        transform: translateY(12vw);
+    }
+    .slick-next{
+        transform: translateY(12vw);
+    }
+}
+
+@media (max-width: 520px) {
+    .sec7container{
+        margin-top: 5rem;
+    }
+    .sec7content{
+        margin-bottom: 4rem;
+    }
+    .testimonialstar{
+        display: none;
+    }
+    .sec7head{
+        font-size: 1.2rem;
+    }
+    .sec7para{
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    .sec7btn{
+        font-size: 0.6rem;
+    }
+    .testimonialpara{
+        font-size: 0.6rem;
+    }
+    .testimonialimg{
+        width: 45px;
+        height: 45px;
+    }
+    .testimonialname{
+        width: 60%;
+    }
+    .testimonialname1{
+        font-size: 0.8rem;
+    }
+    .testimonialname2{
+        font-size: 0.6rem;
+    }
+    .slick-prev{
+        transform: translateY(10vw);
+    }
+    .slick-next{
+        transform: translateY(10vw);
+    }
+}
+
+@media (max-width: 400px) {
+    .sec7container{
+        margin-top: 3rem;
+    }
+    .sec7item{
+        padding: 0.7rem;
+    }
+    .sec7content{
+        margin-bottom: 3rem;
+    }
+    .testimonialdata{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonialname{
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .testimonialname1{
+        width: 100%;
+    }
+    .slick-prev{
+        transform: translateY(65px);
+    }
+    .slick-next{
+        transform: translateY(65px);
+    }
+    .testimonialpara{
+        font-size: 0.55rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

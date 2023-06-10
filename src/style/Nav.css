@@ -1,0 +1,380 @@
+.nav{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    /* overflow: hidden; */
+    /* border: 1px solid white; */
+}
+
+.navbox{
+    padding-top: 1rem;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+.logo{
+    
+}
+
+.logo img{
+    height: 95px;
+}
+/* .logo img:hover{
+    animation: swing;
+    animation-duration: 1s;
+} */
+
+.list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.list li a{
+    text-decoration: none;
+    color: var(--navt);
+    font-size: 1rem;
+    /* border: 1px solid white; */
+    display: block;
+    position: relative;
+}
+.navhover::after{
+    content: " ";
+    position: absolute;
+    left: 0; bottom: -3px;
+    width: 0px;
+    height: 2px;
+    background-color: var(--o);
+    transition: all 0.5s;
+}
+.navhover:hover::after{
+    width: 100%;
+}
+
+.navloginbtn{
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--o);
+    /* color: var(--); */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.navprofile{
+    /* border: 1px solid white; */
+    position: relative;
+    height: 100%;
+}
+.navprofileicon{
+    font-size: 2rem;
+    color: var(--o);
+}
+.showprofilecontainer{
+    position: absolute;
+    background-color: var(--navprofilebg);
+    color: var(--navprofilet);
+    top: -210px;
+    left: -1rem;
+    width: 150px;
+    height: 140px;
+    height: auto;
+    padding: 1rem;
+    padding-top: 3.5rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+    text-align: left;
+    z-index: -1;
+}
+.navprofile:hover .showprofilecontainer{
+    top: -1rem;
+}
+.showprofilecontainer p{
+    /* margin-bottom: 0.3rem; */
+}
+.navlogoutbtn{
+    width: 100%;
+    background-color: var(--o);
+    color: var(--t);
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    border: none;
+}
+.themechange{
+    cursor: pointer;
+}
+li a{
+    /* border: 1px solid white; */
+}
+
+/* ---------------------- nav about ----------------------- */
+.navabout{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.navaboutcontainer{
+    position: absolute;
+    background-color: var(--navaboutbg);
+    top: -240px;
+    width: 210px;
+    border-radius: 10px;
+    left: 0;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1.5rem;
+    z-index: -1;
+}
+.navabout:hover .navaboutcontainer{
+    top: 80px;
+}
+.navaboutchild{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.navaboutlastchild{
+    margin-bottom: 0;
+}
+
+/* ---------------- nav about animation ----------------- */
+.navaboutchild:hover{
+    color: var(--o);
+}
+
+.navaboutchild:hover .navabouticon{
+    display: inline-block;
+    padding-left: 40px;
+    color: var(--o);
+}
+
+.navabouticon{
+    display: inline-block;
+    color: transparent;
+    transition: all 0.5s;
+    padding-left: 20px;
+}
+
+/* ------------------- hamburger menu styling for media queries ----------------------- */
+.hamburger{
+    width: 60%;
+    position: relative;
+}
+
+.hamburger input[type="checkbox"]{
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    width: 35px; 
+    height: 35px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.lines{
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    top: 33px;
+    left: 0px;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line{
+    display: none;
+    background-color: var(--white);
+    width: 40px;
+    height: 4px;
+}
+
+.hamburger input[type="checkbox"]:checked ~ .list{
+    transform: translateY(30%);
+}
+
+.hamburger input[type="checkbox"]:checked ~ .lines .line{
+    background-color: var(--white);
+}
+.lines .line1{
+    transition: transform 0.3s;
+}
+
+.hamburger input[type="checkbox"]:checked ~ .lines .line1{
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+
+.hamburger input[type="checkbox"]:checked ~ .lines .line2{
+    display: none;    
+}
+
+.lines .line3{
+    transition: transform 0.3s;
+}
+
+.hamburger input[type="checkbox"]:checked ~ .lines .line3{
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+}
+
+
+/* -------------------------- media queries ---------------------------------- */
+@media (max-width: 1100px){
+    .hamburger{
+        width: 70%;
+    }
+    .list li a{
+        font-size: 0.9rem;
+    }
+    .list li button{
+        font-size: 0.8rem;
+    }
+    .showprofilecontainer{
+        width: 140px;
+    }
+}
+@media (max-width: 1000px) {
+    .showprofilecontainer{
+        width: 130px;
+    }
+}
+@media (max-width: 900px) {
+    .navabout{
+        height: auto;
+    }
+    .navaboutcontainer{
+        top: 0;
+        left: -300px;
+    }
+    .navabout:hover .navaboutcontainer{
+        top: 0px;
+        left: 260px;
+    }
+    .navbox{
+        flex-direction: row-reverse;
+    }
+    .hamburger{
+        width: 250px;
+        height: 300px;
+    }
+    .hamburger input[type="checkbox"]{
+        display: inline;
+    }
+    .lines{
+        display: flex;
+    }
+    .line{
+        display: block;
+    }
+    .list{
+        flex-direction: column;
+        align-items: left;
+        list-style-type: none;
+        background-color: var(--bg);
+        transform: translateY(-110%);
+        transition: transform 0.5s;
+        padding: 1.5rem 0;
+        border-radius: 10px;
+    }
+    .list li{
+        width: 100%;
+        text-align: left;
+        padding: 0 2rem;
+    }
+    .list li button{
+        width: 100%;
+    }
+    .showprofilecontainer{
+        left: -200%;
+        top: -1rem;
+        width: 115%;
+        padding-top: 4rem;
+        box-shadow: var(--navshadowmedia);
+    }
+    .navprofile:hover .showprofilecontainer{
+        top: -1rem;
+        left: -1rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .navaboutcontainer{
+        top: 40px;
+        left: -300px;
+        z-index: 1;
+    }
+    .navabout:hover .navaboutcontainer{
+        top: 40px;
+        left: 30px;
+        box-shadow: var(--navshadowmedia);
+    }
+}
+
+@media (max-width: 450px) {
+    .logo img{
+        height: 70px;
+    }
+    .hamburger input[type="checkbox"]{
+        top: 18px;
+    }
+    .lines{
+        top: 18px;
+    }
+    .hamburger input[type="checkbox"]:checked ~ .list{
+        transform: translateY(25%);
+    }
+    .showprofilecontainer{
+        width: 215px;
+    }
+}
+
+@media (max-width: 350px) {
+    .list li a{
+        font-size: 0.9rem;
+    }
+    .list{
+        height: 280px;
+    }
+    .hamburger input[type="checkbox"]:checked ~ .list{
+        transform: translateY(30%);
+    }
+    .logo img{
+        height: 60px;
+    }
+    .showprofilecontainer{
+        left: -300%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

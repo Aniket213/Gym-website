@@ -1,0 +1,217 @@
+.section6{
+    min-height: 85vh;
+    background-color: var(--bg);
+    color: var(--t);
+    position: relative;
+    border: 1px solid transparent;
+    z-index: 2;
+}
+
+.section6head{
+    font-size: 3rem;
+    margin: 4rem 0 6rem 0;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.4rem;
+}
+.sec6anim{
+    display: inline-block;
+}
+.sec6anim:hover{
+    animation: rubberBand;
+    animation-duration: 1s;
+    color: var(--o);
+}
+.sec6padding{
+    margin-right: 1rem;
+}
+
+.sec6container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec6box{
+    text-align: left;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--sec6box);
+    box-shadow: var(--sec6boxshadow);
+    transition: all 0.5s;
+}
+
+.sec6box:hover{
+    transform: scale(115%);
+    background-color: var(--o);
+}
+
+.sec6box:hover .sec6icon{
+    color: var(--white);
+}
+
+.sec6box:hover .sec6tick{
+    color: var(--white);
+}
+
+.sec6box:hover .sec6btn{
+    background-color: var(--sec6btnbg);
+}
+
+.sec6icon{
+    color: var(--o);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.5;
+}
+
+.sec6plan{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.sec6price{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.sec6planitems{
+    margin-bottom: 2rem;
+}
+
+.sec6darkcolor{
+    opacity: 0.2;
+}
+
+.sec6planitem{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.sec6tick{
+    color: var(--o);
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.sec6btn{
+    border: none;
+    outline: none;
+    background-color: var(--o);
+    width: 100%;
+    padding: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+.sec6btn:hover{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+/* ------------------- media queries --------------------- */
+
+@media (max-width: 1050px) {
+    .sec6box{
+        padding: 1.5rem 2rem;
+    }
+    .sec6plan{
+        font-size: 1rem;
+    }
+    .sec6price{
+        font-size: 1.2rem;
+    }
+    .sec6planitem{
+        font-size: 0.6rem;
+    }
+    .sec6btn{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .section6head{
+        font-size: 2.5rem;
+        margin: 3rem 0 3rem 0;
+    }
+    .sec6container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .sec6box{
+        padding: 1rem 1.5rem;
+        width: 250px;
+        margin-bottom: 2rem;
+    }
+    .sec6icon{
+        font-size: 1.5rem;
+    }
+    .sec6iconbox{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .sec6plan{
+        display: inline;
+        font-size: 1rem;
+    }
+    .sec6price{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .sec6planitems{
+        margin-bottom: 1rem;
+    }
+    .sec6planitem{
+        margin-bottom: 0.2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .section6head{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

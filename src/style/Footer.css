@@ -1,0 +1,202 @@
+.footer{
+    background-color: var(--footerbg);
+    color: var(--t);
+    position: relative;
+}
+
+.footercontainer{
+    width: 80%;
+    /* border: 1px solid #f77f00; */
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerchild{
+    /* border-bottom: 1px solid white; */
+    width: 240px;
+    margin-bottom: 2rem;
+}
+
+.footerhead{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.linkscontainer{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.linkscontainer a{
+    text-decoration: none;
+    color: var(--t);
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+}
+
+.timingsbox{
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 0.7rem;
+}
+
+.timings{
+    color: var(--o);
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+
+.contactcontainer{
+    /* border: 1px solid white; */
+    text-align: left;
+}
+
+.contactchild{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    font-weight: 300;
+}
+
+.contacticon{
+    color: var(--o);
+    display: inline-block;
+    padding-right: 0.7rem;
+    font-size: 1rem;
+}
+
+.contactsocialmedia{
+    /* border: 1px solid white; */
+    padding-top: 1.2rem;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactsocialicon{
+    font-size: 1.5rem;
+}
+.contactsocialicon:hover{
+    animation: swing;
+    animation-duration: 1s;
+}
+
+.footerfacebook{
+    padding: 0.2rem;
+    border-radius: 2px;
+    color: white;
+    background-color: #00a0dc;
+}
+.footerlinkedin{
+    padding: 0.2rem;
+    border-radius: 2px;
+    color: white;
+    background-color: #4267B2;
+}
+.footerinstagram{
+    padding: 0.2rem;
+    border-radius: 2px;
+    color: white;
+    background: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+.footertwitter{
+    padding: 0.2rem;
+    border-radius: 2px;
+    background-color: #00aced;
+    color: white;
+}
+
+.footerform{
+    /* border: 1px solid white; */
+    font-weight: 300;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerformpara{
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+.footerformmail, .footerformfeedback{
+    margin-bottom: 0.7rem;
+    width: 80%;
+    padding: 0.5rem;
+    color: var(--footermailclr);
+    font-size: 0.8rem;
+    font-family: poppins;
+    font-weight: 300;
+    border: 1px solid var(--o);
+    outline: none;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+.footerformmail:focus, .footerformfeedback:focus{
+    transform: scale(110%);
+    border: 2px solid var(--o);
+}
+.footerformbtn{
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    width: 80%;
+    color: var(--t);
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    background-color: var(--o);
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+.footerformbtn:hover{
+    animation: shakeX;
+    animation-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+.theme1{
+  --homebg: #003049;
+  --bg : #003049;
+  --t : #eae2b7;
+  --o : #f77f00;
+  --bg2 : #002538;
+  --white : #fff;
+  --black: #000;
+  /*  sec1  */
+  --sec1t: #eae2b7;
+
+  /*  nav  */
+  --navt: #eae2b7;
+  --navaboutbg: #003049;
+  --navprofilebg: #003049;
+  --navprofilet: #eae2b7;
+  --navshadowmedia : 0 0 10px rgba(117, 117, 117, 0.204);
+  --sec1gradient : linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.707));
+  --sec1maingradient : linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+
+  /*  sec2  */
+  --sec2box : #ffffff0c;
+  --sec2boxshadow : 0px 0px 10px rgba(255, 255, 255, 0.11);
+
+  /*  sec4  */
+  --sec4hover : rgba(0, 0, 0, 0.792);
+
+  /*  sec6  */
+  --sec6box : #00334f;
+  --sec6boxshadow: 0px 0px 10px rgba(108, 108, 108, 0);
+  --sec6btnbg: #eae2b7;
+  
+  /*  footer  */
+  --footerbg : #00273e;
+  --footermailclr: white;
+
+  /*  esec1  */
+  --esec1bg : #002538;
+  --eesec1t: #eae2b7;
+
+  /*  nav2  */
+  --nav2t: #eae2b7;
+
+  /*  esec2  */
+  --esec2box : rgba(0, 0, 0, 0.84);
+  --esec2hover : #f7800083;
+
+  /*  searchbar  */
+  --searchbar : #005583;
+
+  /*  card  */
+  --exercisecardbg: black;
+
+  /*  eesec1  */
+  --eesec1boxmedia : #6c6c6c36;
+
+  /*  LoginSignup  */
+  --loginsignupbg: #004266;
+  --lstitle: #eae2b7;
+  --inputboxshadow: 0 0 8px rgba(134, 134, 134, 0.425);
+  --inputi: #acacac;
+  --inputplaceholder: #aaa;
+  --lsball: linear-gradient(-45deg, #003049 0%, #006da8 100%);
+  --lssidebtnbg: none;
+  --lssidebtnborder: #eae2b7;
+}
+
+
+.theme2{
+  --homebg: #fffbe6;
+  --bg : #fffbe6;
+  --t : #003049;
+  --o : #f77f00;
+  --bg2 : #eae2b7;
+  --white : #000;
+  --black: #fff;
+  /*  sec1  */
+  --sec1t: #eae2b7;
+
+  /*  nav  */
+  --navt: #eae2b7;
+  --navaboutbg: #003049;
+  --navprofilebg: #003049;
+  --navprofilet: #eae2b7;
+  --sec1gradient: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.707));
+  --sec1maingradient: linear-gradient(rgba(113, 113, 113, 0.1), rgba(255, 255, 255, 0.15));
+
+  /*  sec2  */
+  --sec2box : #eae2b740;
+  --sec2boxshadow : 0px 0px 10px rgba(108, 108, 108, 0.11);
+
+  /*  sec4  */
+  --sec4hover : rgba(0, 0, 0, 0.792);
+  /* --sec4hover : #eae2b7a2; */
+
+  /*  sec6  */
+  --sec6box : #eae2b740;
+  --sec6boxshadow: 0px 0px 30px rgba(135, 132, 132, 0.21);
+  --sec6btnbg: #eae2b7;
+
+  /*  footer  */
+  --footerbg : #eae2b740;
+  --footermailclr: #003049;
+
+  /*  esec1  */
+  --esec1bg : #fffbe6;
+  --eesec1t: #003049;
+
+  /*  nav2  */
+  --nav2t: #003049;
+
+  /*  esec2  */
+  --esec2box : rgba(0, 0, 0, 0.84);
+  --esec2hover : #f7800083;
+
+  /*  searchbar  */
+  --searchbar : #eae2b793;
+
+  /*  card  */
+  --exercisecardbg: #eae2b740;
+
+  /*  eesec1  */
+  --eesec1boxmedia : #6c6c6c36;
+
+  /*  LoginSignup  */
+  --loginsignupbg: #fffbe6;
+  --lstitle: #003049;
+  --inputboxshadow: 0 0 8px rgba(174, 174, 174, 0.295);
+  --inputi: #acacac;
+  --inputplaceholder: #aaa;
+  --lsball: linear-gradient(-45deg, #faf2cf 0%, #fffcec 100%);
+  --lssidebtnbg: #f77f00;
+  --lssidebtnborder: #f77f00;
+}
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.app {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+

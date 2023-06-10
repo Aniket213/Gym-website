@@ -1,0 +1,425 @@
+/*  responsive till 480px */
+.exercises{
+    background-color: var(--bg);
+    /* overflow: hidden; */
+}
+/* ----------------------- esection1 ------------------------- */
+.esec1{
+    height: 100vh;
+    background-color: var(--esec1bg);
+    color: var(--t);
+    padding-top: 230px;
+    /* overflow: hidden; */
+}
+.eesec1t{
+    color: var(--eesec1t);
+}
+.orangeclr{
+    color: var(--o);
+}
+
+.exercisequote{
+    /* border: 2px solid white; */
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    line-height: 130%;
+    text-align: left;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.exerciseimg{
+    /* border: 2px solid white; */
+    position: absolute;
+    bottom: 0px; right: 150px;
+    height: 86vh;
+}
+
+
+/* --------------------------------------------------- */
+/* ----------------------- esection2 ------------------------- */
+/* --------------------------------------------------- */
+
+.esection2{
+    /* border: 1px solid #00f7de; */
+    background-color: var(--bg);
+    padding: 4rem 150px 0 150px;
+}
+
+.esec2head{
+    font-size: 3rem;
+    color: var(--o);
+    text-align: left;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    line-height: 130%;
+    font-weight: 500;
+    padding-bottom: 4rem;
+}
+.esection2headanim{
+    padding-right: 2rem;
+    display: inline-block;
+}
+.esecslider{
+    /* border: 2px solid red; */
+}
+
+.esecbodypart{
+    padding: 3rem 4rem;
+}
+
+.esecbody{
+    /* border: 2px solid orange; */
+    height: 350px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.esecbody1{
+    background-image: url('../../public/images/Final/chest2.jpg');
+}
+.esecbody2{
+    background-image: url('../../public/images/Final/back2.jpg');
+}
+.esecbody3{
+    background-image: url('../../public/images/Final/arms1.jpg');
+}
+.esecbody4{
+    background-image: url('../../public/images/Final/legs1.jpg');
+}
+.esecbody5{
+    background-image: url('../../public/images/Final/cardio1.jpg');
+}
+.esecbody6{
+    background-image: url('../../public/images/Final/shoulder4.jpg');
+}
+.esecbody7{
+    background-image: url('../../public/images/Final/neck1.jpg');
+}
+.esecbody8{
+    background-image: url('../../public/images/Final/abs4.jpg');
+}
+
+.inesecbody{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--o);
+    padding: 0.9rem 0;
+    background-color: var(--esec2box);
+    transition: all 0.5s;
+}
+.inesecbody:hover{
+    background-color: var(--esec2hover);
+    color: black;
+}
+
+/* ------------------------------------------ */
+
+.esecslider .slick-arrow.slick-prev, 
+.esecslider .slick-arrow.slick-next{
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.esecslider .slick-prev{
+    left: -5vw !important;
+    transform: translateY(-4vw);
+}
+.esecslider .slick-next{
+    right: -4vw !important;
+    transform: translateY(-4vw);
+}
+.esecslider .slick-prev::before, .esecslider .slick-next::before{
+    display: none;
+}
+.esecslider .prevbtn, .esecslider .nextbtn{
+    font-size: 2.5vw;
+    color: var(--white) !important;
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------- search bar --------------------------- */
+/* --------------------------------------------------- */
+
+.exercisesearchbar{
+    /* border: 2px solid rgb(255, 0, 255); */
+    background-color: var(--bg);
+    padding: 5rem 0;
+}
+
+.exercisessearchbar{
+    /* border: 2px solid rebeccapurple; */
+    padding: 2rem 0;
+    width: 70%;
+    margin: auto;
+}
+
+.exercisessearchbar form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercisesearch{
+    width: 80%;
+    display: flex;
+    background-color: var(--searchbar);
+    padding: 0.8rem 0;
+}
+
+.exercisesearch i{
+    font-size: 2.5rem;
+    height: 100%;
+    width: 10%;
+    color: var(--o);
+}
+
+.exercisesearch input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--t);
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+.exercisebtn{
+    width: 20%;
+    cursor: pointer;
+    background-color: var(--searchbar);
+    border: none;
+    outline: none;
+    color: var(--t);
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    background-color: var(--o);
+}
+
+
+/* ----------------------- esection3 ------------------------- */
+.esec3{
+    /* border: 2px solid #fff700; */
+    background-color: var(--bg);
+    height: 80vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.inesec3{
+    /* border: 2px solid yellow; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* ---------------------- media queries ---------------------- */
+/* ---------------------- media queries ---------------------- */
+/* ---------------------- media queries ---------------------- */
+
+@media (max-width: 1250px){
+    .esecbody{
+        height: 330px;
+        width: 220px;
+    }
+}
+
+@media (max-width: 1170px){
+    .esecbody{
+        height: 330px;
+        width: 220px;
+        transform: translateX(-35px);
+    }
+}
+
+@media (max-width: 1050px){
+    .esecbody{
+        height: 350px;
+        width: 260px;
+        transform: translateX(-20px);
+    }
+}
+
+@media (max-width: 950px){
+    .esecbody{
+        height: 350px;
+        width: 260px;
+        transform: translateX(0px);
+    }
+    .esection2{
+        padding: 4rem 80px 0 80px;
+    }
+    .esec2head{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 900px){
+    .exercisequote{
+        padding-left: 80px;
+        font-size: 3rem;
+    }
+    .exerciseimg{
+        height: 78vh;
+        right: 90px;
+    }
+    .esecbody{
+        transform: translateX(-25px);
+    }
+    .exercisesearch i{
+        font-size: 2rem;
+        padding-top: 0.2rem;
+    }
+    .exercisebtn{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px){
+    .esecbody{
+        transform: translateX(-45px);
+    }
+    .exercisesearch i{
+        font-size: 2rem;
+        padding-left: 0.5rem;
+    }
+    .exercisebtn{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 740px){
+    .esecbody{
+        transform: translateX(9vw);
+    }
+    .esection2 .esecslider .prevbtn, .esecslider .nextbtn{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 700px){
+    .exercisequote{
+        padding-left: 60px;
+        font-size: 2.5rem;
+    }
+    .exerciseimg{
+        height: 75vh;
+        right: 60px;
+    }
+    .exercisessearchbar{
+        width: 80%;
+    }
+    .exercisebtn{
+        width: 30%;
+        font-size: 1.2rem;
+    }
+    .exercisesearch{
+        width: 70%;
+    }
+    .exercisesearch i{
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+    .exercisesearch input{
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 670px){
+    .esecbody{
+        transform: translateX(5vw);
+    }
+}
+
+@media (max-width: 590px){
+    .esec1{
+        padding-top: 250px;
+    }
+    .exercisequote{
+        padding-left: 40px;
+        font-size: 2rem;
+    }
+    .exerciseimg{
+        height: 78vh;
+        right: 20px;
+    }
+    .exercisebtn{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 560px){
+    .esecbody{
+        transform: translateX(0vw);
+    }
+    .esec2head{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .esection2{
+        padding: 4rem 50px 0 50px;
+    }
+    .exercisessearchbar{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

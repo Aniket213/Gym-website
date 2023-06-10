@@ -1,0 +1,259 @@
+.section4{
+    height: 100vh;
+    background-color:  var(--bg);
+    color:  var(--t);
+    border: 1px solid transparent;
+}
+
+.section4head{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    margin: 5rem 0 6rem 0;
+}
+.section4head span{
+    display: inline-block;
+}
+.section4head span:hover{
+    color:  var(--o);
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+.sec4animpadding{
+    margin-right: 1.5rem;
+}
+.sec4boxcontainer{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dummy{
+    overflow: hidden;
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+.sec4box{
+    /* border: 1px solid white; */
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.sec4box:hover{
+    transform: scale(110%);
+}
+
+.sec4trainerinfo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--sec4hover);
+    padding: 1rem;
+    height: 90px;
+    transition: all 0.5s;
+}
+
+.sec4trainerinfo:hover{
+    height: 125px;
+}
+
+.sec4btn{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    background-color: var(--o);
+    padding: 0.3rem 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+
+.sec4btn a{
+    color: var(--t);
+    text-decoration: none;
+}
+
+.sec4trainerinfo:hover .sec4btn{
+    transform: scale(1);
+}
+.sec4btn:hover{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+.sec4box1{
+    background: url('../../../public/images/trainers/b3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec4box2{
+    background: url('../../../public/images/trainers/b2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec4box3{
+    background: url('../../../public/images/trainers/b4.jpg');
+    background-size: cover;
+}
+
+.sec4box4{
+    background: url('../../../public/images/trainers/a12.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec4fame{
+    margin-top: 0.5rem;
+    color: var(--o);
+    font-size: 0.9rem;
+}
+
+.sec4name{
+    color: #eae2b7;
+    /* color: #003049; */
+}
+
+/* ------------------- media queries --------------------- */
+
+@media (max-width: 1300px) {
+    .dummy{
+        width: 200px;
+        height: 290px;
+    }
+    .sec4trainerinfo{
+        height: 70px;
+        padding: 0.6rem;
+    }
+    .sec4fame{
+        margin-top: 0.2rem;
+    }
+    .sec4trainerinfo:hover{
+        height: 110px;
+    }
+    .sec4fame{
+        font-size: 0.8rem;
+    }
+    .sec4name{
+        font-size: 0.9rem;
+    }
+    .sec4btn{
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .section4head{
+        margin: 2rem 0 2rem 0;
+    }
+    .dummy{
+        width: 220px;
+        height: 240px;
+        margin-bottom: 1.5rem;
+    }
+    .sec4boxcontainer{
+        flex-wrap: wrap;
+        width: 60vw;
+    }
+}
+
+@media (max-width: 775px) {
+    .sec4boxcontainer{
+        width: 70vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .sec4boxcontainer{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 560px) {
+    .section4head{
+        font-size: 2rem;
+    }
+    .dummy{
+        width: 180px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 470px) {
+    .section4head{
+        margin: 3rem 0 3rem 0;
+    }
+    .dummy{
+        width: 150px;
+        height: 210px;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .section4head{
+        font-size: 1.5rem;
+    }
+    .section4head{
+        margin: 2rem 0 1rem 0;
+    }
+    .dummy{
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 130px;
+    }
+    .sec4box1{
+        background-position: 10% 35%;
+    }
+    .sec4box2{
+        background-position: 10% 35%;
+    }
+    .sec4box3{
+        background-position: 10% 35%;
+    }
+    .sec4trainerinfo{
+        height: 50px;
+        padding: 0.2rem;
+    }
+    .sec4fame{
+        margin-top: 0.1rem;
+        font-size: 0.7rem;
+    }
+    .sec4name{
+        font-size: 0.8rem;
+    }
+    .sec4trainerinfo:hover{
+        height: 80px;
+    }
+    .sec4btn{
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+        padding: 0.2rem 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

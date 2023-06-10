@@ -1,0 +1,401 @@
+.loginsignup2{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--loginsignupbg);
+    overflow: hidden;
+    z-index: 2;
+}
+  
+  .forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .signin-signup {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+  }
+  
+  form.sign-up-form, form.sign-in-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  form.sign-up-form {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  form.sign-in-form {
+    z-index: 2;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: var(--lstitle);
+    margin-bottom: 10px;
+  }
+  .input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: var(--inputboxshadow);
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+  .input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: var(--inputi);
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--lstitle);
+    font-family: poppins;
+  }
+  .input-field input::placeholder {
+    color: var(--inputplaceholder);
+    font-weight: 500;
+  }
+  .social-text {
+    color: var(--lstitle);
+    padding: 0.7rem 0;
+    font-size: 1rem;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .social-icon {
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: var(--lstitle);
+    border-radius: 50%;
+    border: 1px solid var(--lstitle);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+  }
+  .social-icon:hover {
+    color: #f77f00;
+    border-color: #f77f00;
+  }
+  .btn {
+    width: 150px;
+    background-color: #f77f00;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color:var(--lstitle);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    letter-spacing: 0.05rem;
+  }
+  .btn:hover {
+    /* background-color: #cf6b00; */
+  }
+
+   .panels-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+  
+  .loginsignup2:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: var(--lsball);
+    /* background-color: #003049; */
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 6;
+  }
+  
+  .image {
+    width: 100%;
+    transition: transform 1.1s ease-in-out;
+    transition-delay: 0.4s;
+  }
+  
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 6;
+  }
+  .left-panel {
+    pointer-events: all;
+    padding: 3rem 17% 2rem 12%;
+  }
+  .right-panel {
+    pointer-events: none;
+    padding: 3rem 12% 2rem 17%;
+  }
+  .panel .content {
+    color: var(--lstitle);
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+  .panel h3 {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+  .panel p {
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+  }
+  .loginpanelbtn {
+    background: var(--lssidebtnbg);
+    border: 2px solid var(--lssidebtnborder);
+    color: var(--lstitle);
+    letter-spacing: 0.05rem;
+    border-radius: 30px;
+    padding: 0.7rem 2rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+  }
+  .loginpanelbtn:hover{
+    background-color: #f77f00;
+    border: 2px solid #f77f00;
+  }
+  .right-panel .image,
+  .right-panel .content {
+    transform: translateX(800px);
+  }
+
+  .colororange{
+    color: #f77f00;
+  }
+
+  /* ------------ Alert message ---------------- */
+  .alert{
+    position: absolute;
+    top: 2%; left: 50%;
+    transform: translateX(-50%);
+    background-color: #f77f00;
+    color: #eae2b7;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    z-index: 10;
+  }
+  
+  /*------------------------------------ ANIMATION -------------------------------------------*/
+  
+  .loginsignup2.sign-up-mode:before {
+    transform: translate(100%, -50%);
+    right: 52%;
+  }
+  
+  .loginsignup2.sign-up-mode .left-panel .image,
+  .loginsignup2.sign-up-mode .left-panel .content {
+    transform: translateX(-800px);
+  }
+  
+  .loginsignup2.sign-up-mode .signin-signup {
+    left: 25%;
+  }
+  
+  .loginsignup2.sign-up-mode form.sign-up-form {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .loginsignup2.sign-up-mode form.sign-in-form {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .loginsignup2.sign-up-mode .right-panel .image,
+  .loginsignup2.sign-up-mode .right-panel .content {
+    transform: translateX(0%);
+  }
+  
+  .loginsignup2.sign-up-mode .left-panel {
+    pointer-events: none;
+  }
+  
+  .loginsignup2.sign-up-mode .right-panel {
+    pointer-events: all;
+  }
+  
+/* ____________________________ media queries ___________________________________________________ */
+
+  @media (max-width: 870px) {
+    .loginsignup2 {
+      min-height: 800px;
+      height: 100vh;
+    }
+    .signin-signup {
+      width: 100%;
+      top: 95%;
+      transform: translate(-50%, -100%);
+      transition: 1s 0.8s ease-in-out;
+    }
+  
+    .signin-signup,
+    .loginsignup2.sign-up-mode .signin-signup {
+      left: 50%;
+    }
+  
+    .panels-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+    }
+  
+    .panel {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2.5rem 8%;
+      grid-column: 1 / 2;
+    }
+  
+    .right-panel {
+      grid-row: 3 / 4;
+    }
+  
+    .left-panel {
+      grid-row: 1 / 2;
+    }
+  
+    .image {
+      width: 200px;
+      transition: transform 0.9s ease-in-out;
+      transition-delay: 0.6s;
+    }
+  
+    .panel .content {
+      padding-right: 15%;
+      transition: transform 0.9s ease-in-out;
+      transition-delay: 0.8s;
+    }
+  
+    .panel h3 {
+      font-size: 1.2rem;
+    }
+  
+    .panel p {
+      font-size: 0.7rem;
+      padding: 0.5rem 0;
+    }
+  
+    .loginpanelbtn {
+      font-size: 0.7rem;
+      padding: 0.6rem 1.5rem;
+    }
+  
+    .loginsignup2:before {
+      width: 1500px;
+      height: 1500px;
+      transform: translateX(-50%);
+      left: 30%;
+      bottom: 68%;
+      right: initial;
+      top: initial;
+      transition: 2s ease-in-out;
+    }
+  
+    .loginsignup2.sign-up-mode:before {
+      transform: translate(-50%, 100%);
+      bottom: 32%;
+      right: initial;
+    }
+  
+    .loginsignup2.sign-up-mode .left-panel .image,
+    .loginsignup2.sign-up-mode .left-panel .content {
+      transform: translateY(-300px);
+    }
+  
+    .loginsignup2.sign-up-mode .right-panel .image,
+    .loginsignup2.sign-up-mode .right-panel .content {
+      transform: translateY(0px);
+    }
+  
+    .right-panel .image,
+    .right-panel .content {
+      transform: translateY(300px);
+    }
+  
+    .loginsignup2.sign-up-mode .signin-signup {
+      top: 5%;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  @media (max-width: 620px) {
+    form.sign-up-form, form.sign-in-form {
+      padding: 0 1.5rem;
+    }
+    .image {
+      display: none;
+    }
+    .panel .content {
+      padding: 0.5rem 1rem;
+    }
+    .loginsignup2 {
+      padding: 1.5rem;
+    }
+  
+    .loginsignup2:before {
+      bottom: 72%;
+      left: 50%;
+    }
+  
+    .loginsignup2.sign-up-mode:before {
+      bottom: 28%;
+      left: 50%;
+    }
+  }
+  

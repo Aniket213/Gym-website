@@ -1,0 +1,295 @@
+.section2{
+    background-color: var(--bg);
+    height: 100vh;
+    color: var(--t);
+    position: relative;
+    overflow: hidden;
+}
+
+.section2box{
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec2img{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.sectionshead{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    margin: 5rem 0 8rem 0;
+}
+.sec2anim{
+    display: inline-block;
+}
+.sec2anim:hover{
+    color: var(--o);
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+.section2container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2box{
+    width: 250px;
+    height: 300px;
+    text-align: left;
+    padding: 1.5rem;
+    background-color: var(--sec2box);
+    box-shadow: var(--sec2boxshadow);
+    backdrop-filter: blur( 4px );
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+.sec2box:hover{
+    transform: scale(111%);
+}
+
+.sec2box4{
+    border: none;
+    width: 50px;
+    box-shadow: none;
+    backdrop-filter: none;
+    background-color: transparent;
+}
+
+.sec2boxicon{
+    font-size: 2.2rem;
+    color: var(--o);
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+.sec2boxicon:hover{
+    transform: scale(1.15);
+}
+
+.sec2boxhead{
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.sec2boxpara{
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.sec2boxbtn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 400;    
+}
+.sec2boxbtn a{
+    text-decoration: none;
+    color: var(--t);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s;
+}
+
+.sec2boxbtn:hover a{
+    color: var(--o);
+    font-size: 1.15rem;
+}
+
+.sec2boxbtn:hover .sec2boxbtnicon{
+    display: inline-block;
+    padding-left: 60px;
+    color: var(--o);
+    font-size: 1.15rem;
+}
+
+.sec2boxbtnicon{
+    display: inline-block;
+    color: transparent;
+    transition: all 0.5s;
+    padding-left: 20px;
+}
+
+
+/* -------------------------- media queries ---------------------------------- */
+@media (max-width: 1200px) {
+    .section2container{
+    }
+    .sec2box{
+        padding: 1rem;
+        width: 220px;
+        height: 290px;
+    }
+    .sec2box4{
+        border: none;
+        width: 100px;
+    }
+    .sec2boxicon{
+        font-size: 2rem;
+    }
+    .sec2boxhead{
+        font-size: 1rem;
+    }
+    .sec2boxpara{
+        font-size: 0.8rem;
+    }
+    .sec2boxbtn{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .sec2box{
+        padding: 1rem;
+        width: 200px;
+        height: 280px;
+    }
+    .sec2box4{
+        width: 50px;
+    }
+    .sec2boxpara{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .section2box{
+        border: 1px solid transparent;
+    }
+    .section2container{
+        flex-wrap: wrap;
+        padding-right: 10rem;
+    }
+    .sec2box{
+        width: 250px;
+        height: 250px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .sec2boxicon{
+        font-size: 1.5rem;
+    }
+    .sec2boxhead{
+        font-size: 0.9rem;
+    }
+    .sec2boxpara{
+        font-size: 0.8rem;
+    }
+    .sec2boxbtn a{
+        font-size: 0.9rem;
+    }
+    .sectionshead{
+        margin: 2rem 0 2rem 0;
+    }
+    .sec2box4{
+        display: none;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .sec2box{
+        padding: 1rem;
+        width: 220px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .sectionshead{
+        margin: 3rem 0 3rem 0;
+    }
+    .section2container{
+        display: block;
+        padding-right: 0;
+    }
+    .sec2box{
+        backdrop-filter: blur(7px);
+        width: 80%;
+        height: auto;
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec2boxicon{
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .sec2boxhead{
+        font-size: 0.9rem;
+        margin-left: 2rem;
+    }
+    .sec2boxpara{
+        font-size: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+    .sec2boxbtn a{
+        font-size: 0.8rem;
+    }
+    .sec2box4{
+        display: none;
+    }
+    .sec2boxbtn:hover a{
+        font-size: 0.9rem;
+    }
+    .sec2boxbtn:hover .sec2boxbtnicon{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .sectionshead{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .sec2boxicon{
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+    .sec2boxhead{
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+    .sec2boxpara{
+        font-size: 0.55rem;
+        margin-bottom: 0.7rem;
+    }
+    .sec2boxbtn a{
+        font-size: 0.7rem;
+    }
+    .sec2boxbtn:hover a{
+        font-size: 0.8rem;
+    }
+    .sec2boxbtn:hover .sec2boxbtnicon{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .sectionshead{
+        font-size: 1.5rem;
+    }
+    .sectionshead{
+        margin: 3rem 0 2rem 0;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+.section5{
+    height: 100vh;
+    background-color: var(--bg);
+    color: var(--t);
+    position: relative;
+}
+
+.sec5img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section5box{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.sec5head{
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    margin:5rem 0 1rem 0;
+    word-spacing: 0.8rem;
+    letter-spacing: 0.15rem;
+}
+.sec5anim{
+    display: inline-block;
+    padding-right: 0.4em;
+}
+.sec5para{
+    word-spacing: 0.15rem;
+    width: 40%;
+    margin-bottom: 3rem;
+}
+
+.height{
+    width: 20%;
+    margin-right: 2rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 1rem;
+    border: 1px solid var(--o);
+    color: var(--t);
+}
+
+.weight{
+    width: 20%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--o);
+    color: var(--t);
+}
+
+.sec5btn{
+    width: 42.7%;
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--o);
+    border: none;
+    outline: none;
+    color: var(--t);
+    word-spacing: 0.5rem;
+    letter-spacing: 0.12rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.sec5output{
+    font-size: 1.5rem;
+}
+
+/* ------------------- media queries --------------------- */
+
+@media (max-width: 1080px) {
+    .sec5img{
+        height: 80%;
+        top: 15%;
+    }
+    .sec5head{
+        font-size: 2rem;
+        margin: 7rem 0 1rem 0;
+    }
+    .sec5para{
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+    }
+    .height{
+        width: 20%;
+        margin-right: 2rem;
+        padding: 0.9rem;
+        font-size: 0.9rem;
+    }
+    .weight{
+        width: 20%;
+        padding: 0.9rem;
+        font-size: 0.9rem;    
+    }
+    .sec5btn{
+        width: 43.7%;
+        margin: 1rem 0;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .sec5output{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .sec5head{
+        font-size: 2.2rem;
+        margin: 5rem 0 1rem 0;
+    }
+    .sec5para{
+        font-size: 1rem;
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+    .sec5img{
+        height: 60%;
+        top: 35%;
+    }
+    .sec5btn{
+        width: 45.1%;
+    }
+}
+
+@media (max-width: 585px) {
+    .sec5head{
+        font-size: 1.5rem;
+        margin: 4rem 0 1rem 0;
+    }
+    .sec5para{
+        font-size: 0.8rem;
+        margin-bottom: 2.5rem;
+    }
+    .sec5img{
+        height: 50%;
+        top: 50%;
+        right: 5%;
+    }
+    .height{
+        width: 46%;
+    }
+    .weight{
+        width: 46%;
+    }
+    .sec5btn{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .sec5output{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 505px) {
+    .sec5head{
+        margin: 2.5rem 0 1rem 0;
+    }
+    .sec5para{
+        font-size: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .height{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .weight{
+        width: 100%;
+    }
+    .sec5img{
+        height: 45%;
+        top: 53%;
+        right: 0%;
+    }
+    .sec5output{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .sec5head{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .sec5para{
+        font-size: 0.6rem;
+        margin-bottom: 2rem;
+    }
+    .height{
+        font-size: 0.8rem;
+    }
+    .weight{
+        font-size: 0.8rem;
+    }
+    .sec5btn{
+        font-size: 0.8rem;
+        margin-bottom: 6rem;
+    }
+    .sec5output{
+        font-size: 0,9rem;
+    }
+    .sec5img{
+        height: 36%;
+        top: 57%;
+    }
+}
+
+@media (max-width: 320px) {
+    .sec5img{
+        height: 30%;
+        top: 62%;
+    }
+    .height{
+        margin-right: 0;
+    }
+}
+
+
